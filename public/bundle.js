@@ -998,7 +998,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
   "h1",
   null,
-  "It works"
+  "It works!"
 ), document.getElementById("root"));
 
 /***/ }),
