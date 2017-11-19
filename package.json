@@ -1,0 +1,23 @@
+{
+  "name": "my-react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  }
+}
