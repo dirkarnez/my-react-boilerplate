@@ -7,7 +7,10 @@ var list = newFilledArray(1000000);
 function newFilledArray(len) {
   var rv = new Array(len);
   for (var i = 0; i < len; i++) {
-    rv[i] = 'Brian Vaughn_' + i;
+    rv[i] = { 
+      id: i,
+      name: `Brian Vaughn_${i}`
+    }
   }
   return rv;
 }
@@ -29,7 +32,7 @@ export default class MyList extends React.PureComponent {
         key={key}
         style={style}
       >
-        {list[index]}
+        {list[index].id + "-" + list[index].name}
       </div>
     )
   }
