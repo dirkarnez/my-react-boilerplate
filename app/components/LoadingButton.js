@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import style from '../style.css';
+import { bootstrapUtils } from 'react-bootstrap/lib/utils';
+import  { btnCustomEx } from '../css/style.css'
+
+bootstrapUtils.addStyle(Button, btnCustomEx);
 
 export default class LoadingButton extends React.PureComponent  {
       constructor(props) {
@@ -12,13 +15,18 @@ export default class LoadingButton extends React.PureComponent  {
       render() {
         let isLoading = this.state.isLoading;
         return (
-          <Button
-            bsStyle="default"
-            disabled={isLoading}
-            onClick={!isLoading ? this.handleClick : null}
-          >
-            {isLoading ? 'Loading...' : 'Loading state'}
-          </Button>
+          <div>
+            <Button bsStyle="custom-ex"
+              disabled={isLoading}
+              onClick={!isLoading ? this.handleClick : null}
+            >
+              {isLoading ? 'Loading...' : 'Loading state'}
+            </Button>
+            <Button bsStyle="default"
+              disabled={isLoading}
+              onClick={!isLoading ? this.handleClick : null}
+            > {isLoading ? 'Loading...' : 'Loading state'}</Button>
+          </div>
         );
       }
     

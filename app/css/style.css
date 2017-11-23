@@ -1,0 +1,14 @@
+* {
+  user-select: none;
+}
+
+.btn-custom-ex {
+  color: white;
+  background-color: purple;
+  border-radius: 8px;
+} 
+
+.btn-custom-ex:focus,
+.btn-custom-ex:hover {
+  color: white;
+}
