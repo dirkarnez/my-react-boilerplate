@@ -6,7 +6,8 @@ module.exports = {
     path: path.resolve(__dirname, 'public')
   },
   module: {
-    rules: [{
+    rules: [
+      {
       test: /.jsx?$/,
       include: [
         path.resolve(__dirname, 'app')
@@ -16,6 +17,11 @@ module.exports = {
         path.resolve(__dirname, 'bower_components')
       ],
       loader: 'babel-loader'
-    }]
+    },
+    {
+      test: /\.css$/,
+      use: [ 'style-loader', 'css-loader' ]
+    }
+    ]
   }
 };
