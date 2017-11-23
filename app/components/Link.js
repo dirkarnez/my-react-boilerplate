@@ -5,7 +5,7 @@ const STATUS = {
   NORMAL: 'normal',
 };
 
-export default class Link extends React.Component {
+export default class Link extends React.PureComponent  {
   constructor(props) {
     super(props);
 

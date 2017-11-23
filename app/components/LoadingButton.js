@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import style from '../style.css';
 
-export default class LoadingButton extends React.Component {
+export default class LoadingButton extends React.PureComponent  {
       constructor(props) {
         super(props);
         this.state = { isLoading: false };
